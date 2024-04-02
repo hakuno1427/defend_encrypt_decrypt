@@ -19,7 +19,7 @@ function  installGPG() {
 
 	#Refresh environment variable for current session
 	Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
-	RefreshEnv
+	Update-SessionEnvironment
 }
 
 #Set up GPG key with prepared credential
